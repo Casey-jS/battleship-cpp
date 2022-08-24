@@ -132,6 +132,7 @@ void Game::placeShipsPC(){
 	for (Ship* ship : cpu_ships){
 		bool valid = false;
 		while(!valid){
+			// set the seed to get to as close to truly random as possible
 			srand(time(0));
 			int x = rand() % 9;
 			int y = rand() % 9;
